@@ -5,7 +5,7 @@ Mainly forked the major basic configuration of [amix](https://github.com/amix/vi
 
 ## Installation
 
-### Local Install
+Local Install
 
 ```shell
 $ git clone https://github.com/lukmy/vimrc.d ~/vimrc.d
@@ -14,8 +14,38 @@ $ cd ~/vimrc.d
 $ ./install.sh
 ```
 
-### Net Install
+Net Install
 
 ```shell
 $ curl https://raw.github.com/lukmy/vimrc.d/master/net_install.sh | sh
 ```
+
+## Shortcuts
+
+`<leader>` means `<mapleader>` in vim, in this situation it is `,`. All shortcuts below only works in **Normal Mode**.
+
+- `<leader>d` means **Toggle Nerd Tree**
+- `<leader>t` means `:CtrlP<space>`
+    - Be careful that there is no `<cr>` but a space behind command. We can add another directory argument for this command or just type `<cr>` for vim launch directory.
+- `<leader>e` means **Open [basic_vimrc.vim](basic_vimrc.vim)**, this is for normal settings. 
+- `<leader>ee` means **Open [installed_plugins.vim](installed_plugins.vim)**, this is for plugin settings
+
+## Plugin Installation
+
+I use [Vundle](https://github.com/gmarik/vundle) for plugin management, but there is a problem that vundle uses `g:bundles` to record installed bundles, I don't want to use it because it's not clear for list. So I use another way for vundle. 
+
+I use *[installed_plugins.vim](installed_plugins.vim)* for installing plugins, just add plugin into this file. 
+
+Please do obey the rule I used below for plugin installation. It might not be simple, but it's clear.
+
+```viml
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Please add plugin name here
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'plugin/repo' " we can see the usage from vundle document
+
+" Please add plugin configuration here
+" Let's end by a blank line
+```
+
+After adding contents, just type `:BundleInstall` in vim or `vim +BundleInstall +qall` in shell for plugin installation.
