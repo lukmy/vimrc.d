@@ -38,3 +38,13 @@ Bundle 'klen/python-mode'
 Bundle 'Lokaltog/vim-powerline'
 
 let g:Powerline_symbols='fancy'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Git Plugin: vim-fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'tpope/vim-fugitive'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => EasyMotion
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'Lokaltog/vim-easymotion'

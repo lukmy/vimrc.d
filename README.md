@@ -29,6 +29,7 @@ $ curl https://raw.github.com/lukmy/vimrc.d/master/net_install.sh | sh
     - Be careful that there is no `<cr>` but a space behind command. We can add another directory argument for this command or just type `<cr>` for vim launch directory.
 - `<leader>e` means **Open [basic_vimrc.vim](basic_vimrc.vim)**, this is for normal settings. 
 - `<leader>ee` means **Open [installed_plugins.vim](installed_plugins.vim)**, this is for plugin settings
+- EasyMotion actions used the default keymap settings, so if u want to activate a EasyMotion motion, u need to use `<leader><leader> as map leader
 
 ## Plugin Installation
 
@@ -49,3 +50,11 @@ Bundle 'plugin/repo' " we can see the usage from vundle document
 ```
 
 After adding contents, just type `:BundleInstall` in vim or `vim +BundleInstall +qall` in shell for plugin installation.
+
+## Installed Plugins
+
+- [CtrlP](https://github.com/kien/ctrlp) for amazing file jump
+- [Python-Mode](https://github.com/klen/pythom-mode) for python development
+- [Vim-Powerline](https://github.com/Lokaltog/vim-powerline) for fancy vim status bar
+- [Fugitive](https://github.com/tpope/vim-fugitive) for git assistance
+- [EasyMotion](https://github.com/Lokaltog/vim-easymotion) for amazing in-file jump
