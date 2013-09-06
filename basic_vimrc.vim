@@ -575,4 +575,4 @@ endfunc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Special Filetype amend
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd! bufreadpost *.md set ft=markdown
+autocmd! bufnewfile,bufreadpost *.md set ft=markdown
