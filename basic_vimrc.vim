@@ -572,3 +572,7 @@ func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Special Filetype amend
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd! bufreadpost *.md set ft=markdown
