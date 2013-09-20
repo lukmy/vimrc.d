@@ -262,11 +262,12 @@ map <leader>bd :Bclose<cr>
 map <leader>ba :1,1000 bd!<cr>
 
 " Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
+map <leader>tne :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove 
-" map <leader>t<leader> :tabnext 
+map <leader>tn :tabnext<cr>
+map <leader>tnn :tabnext 
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
@@ -575,4 +576,4 @@ endfunc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Special Filetype amend
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd! bufnewfile,bufreadpost *.md set ft=markdown
+autocmd! bufnewfile,bufreadpost,bufwritepost *.md set ft=markdown
