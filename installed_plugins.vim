@@ -42,9 +42,11 @@ Bundle 'Lokaltog/vim-powerline'
 let g:Powerline_symbols='fancy'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Git Plugin: vim-fugitive
+" => Git Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'tpope/vim-fugitive'
+
+Bundle 'gregsexton/gitv'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => EasyMotion
@@ -56,3 +58,7 @@ Bundle 'Lokaltog/vim-easymotion'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'vim-scripts/Align'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Textile
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'Textile-for-VIM'
