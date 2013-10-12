@@ -46,6 +46,8 @@ let g:Powerline_symbols='fancy'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'tpope/vim-fugitive'
 
+cabbrev git <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Git' : 'git')<CR>
+
 Bundle 'gregsexton/gitv'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
