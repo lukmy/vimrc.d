@@ -1,5 +1,5 @@
 
-upgrade_vimrc() {
+pull_vimrc() {
     current_dir=$(pwd); cd ~/vimrc.d
 
     { # try
@@ -13,6 +13,14 @@ upgrade_vimrc() {
     }
 
     vim +BundleInstall +qall
+
+    cd $current_dir
+}
+
+push_vimrc() {
+    current_dir=$(pwd); cd ~/vimrc.d
+
+    git push origin
 
     cd $current_dir
 }
