@@ -64,3 +64,13 @@ Bundle 'vim-scripts/Align'
 " => Textile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'Textile-for-VIM'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Work status
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! ListWorkStatus()
+    tabnew
+    CtrlP $HOME/work_status
+endfunc
+
+cabbrev work <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'call ListWorkStatus()' : 'work')<CR>
