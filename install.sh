@@ -5,18 +5,18 @@ git submodule init
 git submodule update
 
 # write .vimrc
-echo "source ~/vimrc.d/basic_vimrc.vim" > ~/.vimrc
+echo "source $HOME/vimrc.d/basic_vimrc.vim" > $HOME/.vimrc
 # install bundles
 vim +BundleInstall +qall
 
 case $SHELL in
     *bash)
-        target=~/.bashrc
+        target=$HOME/.bashrc
         ;;
     *zsh)
-        target=~/.zshrc
+        target=$HOME/.zshrc
         ;;
     *)
         ;;
 esac
-echo "source ~/vimrc.d/shell_enhancement.sh" >> $target
+echo "source $HOME/vimrc.d/shell_enhancement.sh" >> $target
