@@ -32,14 +32,23 @@ noremap <leader>t :CtrlP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'klen/python-mode'
 
-let g:pymode_lint=0
+let g:pymode_lint = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vim Powerline
+" => Vim Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 
-let g:Powerline_symbols='fancy'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.whitespace = 'Ξ'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git Plugin
