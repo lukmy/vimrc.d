@@ -137,6 +137,7 @@ set smartcase
 
 " Highlight search results
 set hlsearch
+noremap <CR> :nohlsearch<CR>
 
 " Makes search act like search in modern browsers
 set incsearch 
