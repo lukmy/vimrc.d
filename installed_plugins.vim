@@ -37,9 +37,25 @@ noremap <leader>t :CtrlP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Python Mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'klen/python-mode'
+" Bundle 'klen/python-mode'
+" 
+" let g:pymode_lint = 0
 
-let g:pymode_lint = 0
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Jedi
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'davidhalter/jedi-vim'
+
+" Shortcuts
+let g:jedi#goto_assignments_command = "<C-C>g"
+let g:jedi#goto_definitions_command = "<C-C>d"
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<C-C>n"
+let g:jedi#completions_command = "<C-N>"
+let g:jedi#rename_command = "<C-C>r"
+
+" Configurations
+let g:jedi#use_tabs_not_buffers = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim Airline
