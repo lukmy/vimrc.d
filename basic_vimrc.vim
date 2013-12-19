@@ -137,7 +137,7 @@ set smartcase
 
 " Highlight search results
 set hlsearch
-noremap <CR> :nohlsearch<CR>
+noremap <space> :nohlsearch<CR>
 
 " Makes search act like search in modern browsers
 set incsearch 
@@ -242,10 +242,6 @@ vnoremap <silent> # :call VisualSelection('b', '')<CR>
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
-
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
