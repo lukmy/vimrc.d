@@ -98,6 +98,11 @@ Bundle 'vim-scripts/Align'
 Bundle 'Textile-for-VIM'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => XPTemplate
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'drmingdrmer/xptemplate'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Work status
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! ListWorkStatus()
@@ -106,3 +111,4 @@ function! ListWorkStatus()
 endfunc
 
 cabbrev work <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'call ListWorkStatus()' : 'work')<CR>
+

@@ -164,7 +164,7 @@ set foldcolumn=1
 
 " show trailing whitespace
 set list
-set listchars=tab:▸\ ,trail:▫
+set listchars=tab:\|\ ,trail:_
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
