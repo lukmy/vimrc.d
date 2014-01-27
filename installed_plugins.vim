@@ -21,6 +21,16 @@ Bundle 'scrooloose/nerdtree'
 noremap <leader>d :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Gist
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'WebAPI.vim'
+Bundle 'Gist.vim'
+
+let g:gist_use_password_in_gitconfig=1
+
+cabbrev gist <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gist' : 'gist')<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'Tagbar'
