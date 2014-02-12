@@ -47,11 +47,9 @@ Bundle 'kien/ctrlp.vim'
 noremap <leader>t :CtrlP 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Python Mode
+" => PEP8 indent
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Bundle 'klen/python-mode'
-" 
-" let g:pymode_lint = 0
+Bundle 'hynek/vim-python-pep8-indent'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Jedi
@@ -124,3 +122,7 @@ endfunc
 
 cabbrev work <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'call ListWorkStatus()' : 'work')<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Salt
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'saltstack/salt-vim'
