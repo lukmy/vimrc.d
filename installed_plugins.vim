@@ -45,6 +45,7 @@ let g:tagbar_autofocus=1
 Bundle 'kien/ctrlp.vim'
 
 noremap <leader>t :CtrlP 
+noremap <leader>r :CtrlPBufTag<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PEP8 indent
