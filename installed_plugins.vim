@@ -11,20 +11,20 @@ call vundle#rc('~/vimrc.d/bundle/')
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
 noremap <leader>d :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gist
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'WebAPI.vim'
-Bundle 'Gist.vim'
+Plugin 'WebAPI.vim'
+Plugin 'Gist.vim'
 
 let g:gist_use_password_in_gitconfig=1
 
@@ -33,7 +33,7 @@ cabbrev gist <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Gist' : 'gist')<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'Tagbar'
+Plugin 'Tagbar'
 
 noremap <leader>f :TagbarToggle<CR>
 
@@ -42,7 +42,7 @@ let g:tagbar_autofocus=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => CtrlP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 
 noremap <leader>t :CtrlP 
 noremap <leader>r :CtrlPBufTag<CR>
@@ -50,12 +50,12 @@ noremap <leader>r :CtrlPBufTag<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PEP8 indent
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'hynek/vim-python-pep8-indent'
+Plugin 'hynek/vim-python-pep8-indent'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Jedi
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'davidhalter/jedi-vim'
+Plugin 'davidhalter/jedi-vim'
 
 " Shortcuts
 let g:jedi#goto_assignments_command = "<C-C>g"
@@ -71,7 +71,7 @@ let g:jedi#use_tabs_not_buffers = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
@@ -87,31 +87,31 @@ let g:airline_symbols.whitespace = 'Ξ'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 cabbrev git <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'Git' : 'git')<CR>
 
-Bundle 'gregsexton/gitv'
+Plugin 'gregsexton/gitv'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => EasyMotion
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'Lokaltog/vim-easymotion'
+Plugin 'Lokaltog/vim-easymotion'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Alignment
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'vim-scripts/Align'
+Plugin 'vim-scripts/Align'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Textile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'Textile-for-VIM'
+Plugin 'Textile-for-VIM'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => XPTemplate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'drmingdrmer/xptemplate'
+Plugin 'drmingdrmer/xptemplate'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Work status
@@ -126,4 +126,4 @@ cabbrev work <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'call ListWorkStatus()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Salt
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'saltstack/salt-vim'
+Plugin 'saltstack/salt-vim'
