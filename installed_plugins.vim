@@ -17,8 +17,10 @@ Plugin 'gmarik/vundle'
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 
-noremap <leader>d :NERDTreeToggle<CR>
+map <leader>d <plug>NERDTreeTabsToggle<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gist
