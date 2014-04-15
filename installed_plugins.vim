@@ -17,8 +17,9 @@ Bundle 'gmarik/vundle'
 " => NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+map <leader>d <plug>NERDTreeTabsToggle<CR>
 
-noremap <leader>d :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gist
