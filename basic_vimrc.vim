@@ -175,7 +175,7 @@ syntax enable
 set t_Co=256
 
 try
-    colorscheme desert
+    colorscheme molokai
 catch
 endtry
 

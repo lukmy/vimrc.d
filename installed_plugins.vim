@@ -129,3 +129,10 @@ cabbrev work <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'call ListWorkStatus()
 " => Salt
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'saltstack/salt-vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Color scheme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'tomasr/molokai'
+
+let g:molokai_original = 1
