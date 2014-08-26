@@ -43,7 +43,7 @@ Please do obey the rule I used below for plugin installation. It might not be si
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Please add plugin name here
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'plugin/repo' " we can see the usage from vundle document
+Plugin 'plugin/repo' " we can see the usage from vundle document
 
 " Please add plugin configuration here
 " Let's end by a blank line
@@ -53,8 +53,9 @@ After adding contents, just type `:BundleInstall` in vim or `vim +BundleInstall 
 
 ## Installed Plugins
 
-- [CtrlP](https://github.com/kien/ctrlp) for amazing file jump
-- [Python-Mode](https://github.com/klen/pythom-mode) for python development
+- [CtrlP](https://github.com/kien/ctrlp) for amazing file jump and function jump
 - [Vim-Powerline](https://github.com/Lokaltog/vim-powerline) for fancy vim status bar
 - [Fugitive](https://github.com/tpope/vim-fugitive) for git assistance
 - [EasyMotion](https://github.com/Lokaltog/vim-easymotion) for amazing in-file jump
+- [Jedi](https://github.com/davidhalter/jedi-vim) for python completion
+- [Tmuxline](https://github.com/edkolev/tmuxline.vim) for tmux poewline generation
