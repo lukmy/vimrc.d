@@ -136,3 +136,19 @@ Plugin 'saltstack/salt-vim'
 Plugin 'tomasr/molokai'
 
 let g:molokai_original = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Tmuxline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'edkolev/tmuxline.vim'
+
+let g:airline#extensions#tmuxline#enabled = 0
+
+let g:tmuxline_separators = {
+            \ 'left' : '▶',
+            \ 'left_alt': '>',
+            \ 'right' : '◀',
+            \ 'right_alt' : '<',
+            \ 'space' : ' '}
+
+let g:tmuxline_preset = 'full'
