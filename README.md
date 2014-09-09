@@ -17,7 +17,7 @@ $ ./install.sh
 Net Install
 
 ```shell
-$ curl https://raw.github.com/lukmy/vimrc.d/master/net_install.sh | sh
+$ curl https://raw.githubusercontent.com/lukmy/vimrc.d/master/net_install.sh | sh
 ```
 
 ## Shortcuts
