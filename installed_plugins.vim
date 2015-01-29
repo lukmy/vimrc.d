@@ -21,6 +21,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 
 map <leader>d <plug>NERDTreeTabsToggle<CR>
 
+let NERDTreeIgnore=['\.pyc$']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gist
@@ -48,6 +49,8 @@ Plugin 'kien/ctrlp.vim'
 
 noremap <leader>t :CtrlP 
 noremap <leader>r :CtrlPBufTag<CR>
+
+let g:ctrlp_switch_buffer = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => PEP8 indent
@@ -152,3 +155,17 @@ let g:tmuxline_separators = {
             \ 'space' : ' '}
 
 let g:tmuxline_preset = 'full'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Unite
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'Shougo/unite.vim'
+
+Plugin 'Shougo/vimproc.vim'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Ansible
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'chase/vim-ansible-yaml'
+
+"Bundle 'Valloric/YouCompleteMe'
