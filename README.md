@@ -54,8 +54,11 @@ After adding contents, just type `:BundleInstall` in vim or `vim +BundleInstall 
 ## Installed Plugins
 
 - [CtrlP](https://github.com/kien/ctrlp) for amazing file jump and function jump
-- [Vim-Powerline](https://github.com/Lokaltog/vim-powerline) for fancy vim status bar
+- [Vim-Airline](https://github.com/bling/vim-airline) for fancy vim status bar
 - [Fugitive](https://github.com/tpope/vim-fugitive) for git assistance
 - [EasyMotion](https://github.com/Lokaltog/vim-easymotion) for amazing in-file jump
 - [Jedi](https://github.com/davidhalter/jedi-vim) for python completion
 - [Tmuxline](https://github.com/edkolev/tmuxline.vim) for tmux poewline generation
+- [NERDTree](https://github.com/scrooloose/nerdtree) as file explorer
+- [Salt-Vim](https://github.com/saltstack/salt-vim) for salt formula support
+- [Tagbar](https://github.com/majutsushi/tagbar) for tag display
