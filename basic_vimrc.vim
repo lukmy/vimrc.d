@@ -75,6 +75,7 @@ command! W w !sudo tee % > /dev/null
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>e :e! ~/vimrc.d/basic_vimrc.vim<cr>
 autocmd! bufwritepost basic_vimrc.vim source ~/.vimrc
+nnoremap <leader>v :source $MYVIMRC<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -175,8 +176,9 @@ syntax enable
 set t_Co=256
 
 try
-    colorscheme desert
+    colorscheme molokai
 catch
+    colorscheme desert
 endtry
 
 set background=dark
@@ -335,7 +337,7 @@ autocmd BufWrite *.coffee :call DeleteTrailingWS()
 vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
 
 " Open vimgrep and put the cursor in the right position
-map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
+map <leader>g :vimgrep //j **/*.<left><left><left><left><left><left><left><left>
 
 " Vimgreps in the current file
 map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
@@ -406,7 +408,7 @@ function! VisualSelection(direction, extra_filter) range
     if a:direction == 'b'
         execute "normal ?" . l:pattern . "^M"
     elseif a:direction == 'gv'
-        call CmdLine("vimgrep " . '/'. l:pattern . '/' . ' **/*.' . a:extra_filter)
+        call CmdLine("vimgrep " . '/'. l:pattern . '/j' . ' **/*.' . a:extra_filter)
     elseif a:direction == 'replace'
         call CmdLine("%s" . '/'. l:pattern . '/')
     elseif a:direction == 'f'
@@ -569,8 +571,3 @@ endfunc
 func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Special Filetype amend
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd! bufnewfile,bufreadpost,bufwritepost *.md set ft=markdown
