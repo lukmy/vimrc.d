@@ -169,6 +169,14 @@ Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimproc.vim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Ansible
+" => Forge
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'chase/vim-ansible-yaml'
+
+" => Ansible: disabled
+"Plugin 'chase/vim-ansible-yaml'
+
+" => YCM: enabled
+Plugin 'Valloric/YouCompleteMe'
+
+let g:ycm_add_preview_to_completeopt = 1
+
