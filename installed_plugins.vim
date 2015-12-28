@@ -172,5 +172,3 @@ Plugin 'Shougo/vimproc.vim'
 " => Ansible
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'chase/vim-ansible-yaml'
-
-"Bundle 'Valloric/YouCompleteMe'
