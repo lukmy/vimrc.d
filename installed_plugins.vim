@@ -179,4 +179,5 @@ Plugin 'Shougo/vimproc.vim'
 Plugin 'Valloric/YouCompleteMe'
 
 let g:ycm_add_preview_to_completeopt = 1
-
+noremap <C-C>g :YcmCompleter GoToDeclaration<cr>
+noremap <C-C>d :YcmCompleter GoToDefinition<cr>
