@@ -17,6 +17,8 @@ case $SHELL in
         target=$HOME/.zshrc
         ;;
     *)
-        ;;
+        echo shell type not supported, shell is $SHELL
+        exit 1;;
 esac
 echo "source $HOME/vimrc.d/shell_enhancement.sh" >> $target
+

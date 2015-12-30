@@ -60,24 +60,42 @@ Plugin 'hynek/vim-python-pep8-indent'
 
 autocmd FileType python map <leader>g :vimgrep //j **/*.py<left><left><left><left><left><left><left><left><left><left>
 autocmd FileType python vnoremap <silent> gv :call VisualSelection('gv', 'py')<CR>
-" Plugin 'davidhalter/jedi-vim'
-" 
-" " Shortcuts
-" let g:jedi#goto_assignments_command = "<C-C>g"
-" let g:jedi#goto_definitions_command = "<C-C>d"
-" let g:jedi#documentation_command = "K"
-" let g:jedi#usages_command = "<C-C>n"
-" let g:jedi#completions_command = "<C-N>"
-" let g:jedi#rename_command = "<C-C>r"
-" 
-" " Configurations
-" let g:jedi#use_tabs_not_buffers = 0
 
 Plugin 'vim-scripts/Efficient-python-folding'
 
-Plugin 'nvie/vim-flake8'
+if v:version > 703
+    let version_okay = 1
+elseif v:version == 703 && has('patch598')
+    let version_okay = 1
+else
+    let version_okay = 0
+endif
 
-" autocmd BufWritePost *.py :call Flake8()
+Plugin 'davidhalter/jedi-vim'
+let g:jedi#use_tabs_not_buffers = 0
+
+if version_okay && has('python')
+    Plugin 'Valloric/YouCompleteMe'
+
+    let g:ycm_add_preview_to_completeopt = 1
+    noremap <C-C>g :YcmCompleter GoToDeclaration<cr>
+    noremap <C-C>d :YcmCompleter GoToDefinition<cr>
+
+    let g:jedi#completions_enabled = 0
+else
+    " Shortcuts
+    let g:jedi#goto_assignments_command = "<C-C>g"
+    let g:jedi#goto_definitions_command = "<C-C>d"
+    let g:jedi#documentation_command = "K"
+    let g:jedi#usages_command = "<C-C>n"
+    let g:jedi#completions_command = "<C-N>"
+    let g:jedi#rename_command = "<C-C>r"
+
+    " Configurations
+endif
+
+Plugin 'nvie/vim-flake8'
+autocmd BufWritePost *.py :call Flake8()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim Airline
@@ -175,9 +193,3 @@ Plugin 'Shougo/vimproc.vim'
 " => Ansible: disabled
 "Plugin 'chase/vim-ansible-yaml'
 
-" => YCM: enabled
-Plugin 'Valloric/YouCompleteMe'
-
-let g:ycm_add_preview_to_completeopt = 1
-noremap <C-C>g :YcmCompleter GoToDeclaration<cr>
-noremap <C-C>d :YcmCompleter GoToDefinition<cr>
