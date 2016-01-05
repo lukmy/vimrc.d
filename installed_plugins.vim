@@ -68,18 +68,19 @@ else
     let version_okay = 0
 endif
 
-Plugin 'davidhalter/jedi-vim'
-let g:jedi#use_tabs_not_buffers = 0
-
 if version_okay && has('python')
+    " YouCompleteMe
     Plugin 'Valloric/YouCompleteMe'
 
     let g:ycm_add_preview_to_completeopt = 1
     noremap <C-C>g :YcmCompleter GoToDeclaration<cr>
     noremap <C-C>d :YcmCompleter GoToDefinition<cr>
+    let g:ycm_key_detailed_diagnostics = '<leader>dd'
 
-    let g:jedi#completions_enabled = 0
 else
+    " Jedi
+    Plugin 'davidhalter/jedi-vim'
+
     " Shortcuts
     let g:jedi#goto_assignments_command = "<C-C>g"
     let g:jedi#goto_definitions_command = "<C-C>d"
@@ -89,6 +90,7 @@ else
     let g:jedi#rename_command = "<C-C>r"
 
     " Configurations
+    let g:jedi#use_tabs_not_buffers = 0
 endif
 
 Plugin 'nvie/vim-flake8'
