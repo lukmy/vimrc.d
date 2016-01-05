@@ -58,9 +58,6 @@ let g:ctrlp_switch_buffer = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'hynek/vim-python-pep8-indent'
 
-autocmd FileType python map <leader>g :vimgrep //j **/*.py<left><left><left><left><left><left><left><left><left><left>
-autocmd FileType python vnoremap <silent> gv :call VisualSelection('gv', 'py')<CR>
-
 Plugin 'vim-scripts/Efficient-python-folding'
 
 if v:version > 703
@@ -96,6 +93,8 @@ endif
 
 Plugin 'nvie/vim-flake8'
 autocmd BufWritePost *.py :call Flake8()
+
+autocmd FileType python vnoremap <silent> gv :call VisualSelection('gv', 'py')<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim Airline
@@ -185,6 +184,8 @@ let g:tmuxline_preset = 'full'
 Plugin 'Shougo/unite.vim'
 
 Plugin 'Shougo/vimproc.vim'
+
+map <leader><space> :Unite vimgrep
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Forge
