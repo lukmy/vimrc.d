@@ -56,10 +56,10 @@ let g:ctrlp_switch_buffer = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Python
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'hynek/vim-python-pep8-indent'
-
-Plugin 'vim-scripts/Efficient-python-folding'
-
+" Plugin 'hynek/vim-python-pep8-indent'
+" 
+" Plugin 'vim-scripts/Efficient-python-folding'
+" 
 if v:version > 703
     let version_okay = 1
 elseif v:version == 703 && has('patch598')
@@ -93,8 +93,16 @@ else
     let g:jedi#use_tabs_not_buffers = 0
 endif
 
-Plugin 'nvie/vim-flake8'
-autocmd BufWritePost *.py :call Flake8()
+" Plugin 'nvie/vim-flake8'
+" autocmd BufWritePost *.py :call Flake8()
+
+Plugin 'klen/python-mode'
+
+let g:pymode_rope_completion = 0
+let g:pymode_rope_complete_on_dot = 0
+let g:pymode_run_bind = '<leader>rr'
+let g:pymode_rope_goto_definition_bind = ''
+let g:pymode_rope_show_doc_bind = ''
 
 autocmd FileType python vnoremap <silent> gv :call VisualSelection('gv', 'py')<CR>
 
