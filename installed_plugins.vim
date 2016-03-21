@@ -101,7 +101,8 @@ autocmd FileType python vnoremap <silent> gv :call VisualSelection('gv', 'py')<C
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vim Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 let g:airline_left_sep = '>'
 let g:airline_right_sep = '<'
@@ -194,5 +195,5 @@ map <leader><space> :Unite vimgrep
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " => Ansible: disabled
-"Plugin 'chase/vim-ansible-yaml'
+Plugin 'chase/vim-ansible-yaml'
 
