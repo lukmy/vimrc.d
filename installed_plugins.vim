@@ -95,7 +95,7 @@ let g:airline_symbols.linenr = 'linenr' " '¶'
 let g:airline_symbols.branch = 'branch'
 let g:airline_symbols.whitespace = 'whitespace' " 'Ξ'
 
-let g:airline_theme = 'molokai'
+" let g:airline_theme = 'molokai'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git Plugin
@@ -128,7 +128,7 @@ autocmd! bufnewfile,bufreadpost,bufwritepost *.md set ft=markdown
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => XPTemplate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Plugin 'drmingdrmer/xptemplate'
+" Plugin 'drmingdrmer/xptemplate'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Salt
